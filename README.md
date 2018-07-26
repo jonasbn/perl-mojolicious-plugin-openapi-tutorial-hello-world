@@ -10,7 +10,7 @@ This tutorial requires that you have [Mojolicious](https://metacpan.org/pod/Mojo
 
 **OpenAPI** comes from **Swagger**, which I have had a look at, much water has run under that bridge, so now it is time to look at **OpenAPI** a specification on how to write RESTful APIs in a standardised format.
 
-Here goes, lets start with a basic `hello world` example, [all files are available on GitHub](https://github.com/jonasbn/perl-mojolicious-plugin-openapi-tutorial).
+Here goes, lets start with a basic `hello world` example, [all files are available on GitHub](https://github.com/jonasbn/perl-mojolicious-plugin-openapi-tutorial-hello-world).
 
 ## Hello World
 
@@ -229,4 +229,4 @@ That is it for now, good luck with experimenting with **Mojolicious** **OpenAPI*
 - [MetaCPAN: Mojolicious::Plugin::OpenAPI](https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI)
 - [MetaCPAN: Mojolicious::Plugin::OpenAPI Tutorial](https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI::Guides::Tutorial)
 - [OpenAPI Website](https://www.openapis.org/)
-- [GitHub repository for tutorial](https://github.com/jonasbn/perl-mojolicious-plugin-openapi-tutorial)
+- [GitHub repository for tutorial](https://github.com/jonasbn/perl-mojolicious-plugin-openapi-tutorial-hello-world)
