@@ -1,0 +1,32 @@
+{
+    "swagger": "2.0",
+    "info": { "version": "1.0", "title": "Hello World example" },
+    "basePath": "/api",
+    "paths": {
+      "/hello_world": {
+        "get": {
+          "operationId": "helloWorld",
+          "x-mojo-name": "hello_world",
+          "x-mojo-to": "example#hello_world",
+          "summary": "Example app returning hello world",
+          "responses": {
+            "200": {
+              "description": "Returning string 'hello world'",
+              "schema": {
+                "type": "object",
+                "properties": {
+                    "greeting": {
+                        "type": "string"
+                    }
+                }
+              }
+            },
+            "default": {
+              "description": "Unexpected error",
+              "schema": {}
+            }
+          }
+        }
+      }
+    }
+}
