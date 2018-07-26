@@ -1,4 +1,4 @@
-# Tutorial on Mojolicious::Plugin::OpenAPI
+# Tutorial on Mojolicious::Plugin::OpenAPI: Hello World
 
 <!-- markdownlint-disable MD014 -->
 
