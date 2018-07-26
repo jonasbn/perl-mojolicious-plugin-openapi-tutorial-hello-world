@@ -36,3 +36,6 @@ inc/
 
 # Carton files
 local/
+
+# vscode files
+.vstags
