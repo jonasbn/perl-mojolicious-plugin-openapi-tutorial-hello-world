@@ -2,3 +2,4 @@
 *.t linguist-language=Perl
 *.ep linguist-language=Perl
 hello_world linguist-language=Perl
+*.conf linguist-language=Perl
