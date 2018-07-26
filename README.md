@@ -1,6 +1,8 @@
 # Tutorial on Mojolicious::Plugin::OpenAPI
 
-I have always wanted to get my hands _dirty_ with **Swagger**. I recently fell over [Mojolicious::Plugin::OpenAPI](https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI), which fits into my _boring stack_ and I decided to do a prototype.
+<!-- markdownlint-disable MD014 -->
+
+I have always wanted to get my hands _dirty_ with **Swagger**. I recently fell over [Mojolicious::Plugin::OpenAPI](https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI), which fits into my [_boring stack_](https://hackernoon.com/the-boring-stack-the-best-way-to-build-interesting-things-9f54420f683e) and I decided to do a prototype.
 
 I followed the [tutorial](https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI::Guides::Tutorial) for Mojolicious::Plugin::OpenAPI and found it a bit confusing, so I decided to write up a more simple tutorial.
 
@@ -222,7 +224,7 @@ $ http http://localhost:3000/
 
 That is it for now, good luck with experimenting with **Mojolicious** **OpenAPI** integration and **OpenAPI**. Thanks to Jan Henning Thorsen ([@jhthorsen](https://twitter.com/jhthorsen)) for the implementation of Mojolicious::Plugin::OpenAPI.
 
-## References:
+## References
 
 - [MetaCPAN: Mojolicious::Plugin::OpenAPI](https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI)
 - [MetaCPAN: Mojolicious::Plugin::OpenAPI Tutorial](https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI::Guides::Tutorial)
