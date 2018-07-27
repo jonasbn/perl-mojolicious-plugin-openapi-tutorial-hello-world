@@ -188,23 +188,24 @@ Now start the application
 $ morbo script/hello_world
 ```
 
-And finally - lets call the API
+And finally - lets call the API, do note you do not need `jq` and your could use `curl` or `httpie`, so this is just for sticking to the already available tools, `jq` being the exception.
 
 ```bash
-$ http http://localhost:3000/api/hello_world
-```
+$ mojo get --verbose http://localhost:3000/api/hello_world | jq
+GET /api/hello_world HTTP/1.1
+Host: localhost:3000
+User-Agent: Mojolicious (Perl)
+Content-Length: 0
+Accept-Encoding: gzip
 
-We should now get the result
-
-```json
 HTTP/1.1 200 OK
-Content-Length: 26
-Content-Type: application/json;charset=UTF-8
-Date: Thu, 26 Jul 2018 08:20:59 GMT
 Server: Mojolicious (Perl)
+Content-Length: 26
+Date: Fri, 27 Jul 2018 08:47:33 GMT
+Content-Type: application/json;charset=UTF-8
 
 {
-    "greeting": "Hello World"
+  "greeting": "Hello World"
 }
 ```
 
@@ -213,13 +214,13 @@ Yay! and our first **Mojolicious** **OpenAPI** implementation works!
 In addition to the operation, you can obtain the specification by calling the following URL: `/api`
 
 ```bash
-$ http http://localhost:3000/api/
+$ mojo get http://localhost:3000/api/
 ```
 
 And as mentioned earlier our existing operations and parts of the application still works as expected, try calling the URL: `/`
 
 ```bash
-$ http http://localhost:3000/
+$ mojo get http://localhost:3000/
 ```
 
 That is it for now, good luck with experimenting with **Mojolicious** **OpenAPI** integration and **OpenAPI**. Thanks to Jan Henning Thorsen ([@jhthorsen](https://twitter.com/jhthorsen)) for the implementation of Mojolicious::Plugin::OpenAPI.
