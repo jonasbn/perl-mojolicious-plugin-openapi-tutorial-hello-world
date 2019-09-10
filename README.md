@@ -139,7 +139,7 @@ sub startup {
 1;
 ```
 
-Then we add the acual operation, open the file: `lib/HelloWorld/Controller/Example.pm` and add the following snippet:
+Then we add the actual operation, open the file: `lib/HelloWorld/Controller/Example.pm` and add the following snippet:
 
 ```perl
 sub hello_world {
