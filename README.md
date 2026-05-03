@@ -45,12 +45,12 @@ If you need help installing please refer to [the CPAN installation guide](https:
 Create a definition JSON file based on **OpenAPI** to support an Hello World implementation based on the **OpenAPI** specification:
 
 ```bash
-$ touch openapi.conf
+$ touch openapi.json
 ```
 
 The exact name of this file is insignifcant, I just prefer to have clear and understandable filenames for easy identification.
 
-Open `openapi.conf` and insert the following _snippet_:
+Open `openapi.json` and insert the following _snippet_:
 
 ```json
 {
