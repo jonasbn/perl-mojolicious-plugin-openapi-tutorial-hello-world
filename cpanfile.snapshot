@@ -17,7 +17,7 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       List::Util 1.45
       Mojolicious 7.28
-      YAML::PP 0.020
+      YAML::XS 0.67
       perl 5.010001
   Mojolicious-8.61
     pathname: S/SR/SRI/Mojolicious-8.61.tar.gz
@@ -111,7 +111,6 @@ DISTRIBUTIONS
       Mojolicious::Lite undef
       Mojolicious::Plugin undef
       Mojolicious::Plugin::Config undef
-      Mojolicious::Plugin::Config::Sandbox undef
       Mojolicious::Plugin::DefaultHelpers undef
       Mojolicious::Plugin::EPLRenderer undef
       Mojolicious::Plugin::EPRenderer undef
@@ -150,59 +149,18 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       JSON::Validator 4.05
       Mojolicious 8.00
-  YAML-PP-0.026
-    pathname: T/TI/TINITA/YAML-PP-0.026.tar.gz
+  YAML-LibYAML-v0.906.0
+    pathname: T/TI/TINITA/YAML-LibYAML-v0.906.0.tar.gz
     provides:
-      YAML::PP 0.026
-      YAML::PP::Common 0.026
-      YAML::PP::Constructor 0.026
-      YAML::PP::Dumper 0.026
-      YAML::PP::Emitter 0.026
-      YAML::PP::Exception 0.026
-      YAML::PP::Grammar 0.026
-      YAML::PP::Highlight 0.026
-      YAML::PP::Lexer 0.026
-      YAML::PP::Loader 0.026
-      YAML::PP::Parser 0.026
-      YAML::PP::Perl 0.026
-      YAML::PP::Preserve::Array 0.026
-      YAML::PP::Preserve::Hash 0.026
-      YAML::PP::Preserve::Scalar 0.026
-      YAML::PP::Reader 0.026
-      YAML::PP::Reader::File 0.026
-      YAML::PP::Render 0.026
-      YAML::PP::Representer 0.026
-      YAML::PP::Schema 0.026
-      YAML::PP::Schema::Binary 0.026
-      YAML::PP::Schema::Core 0.026
-      YAML::PP::Schema::Failsafe 0.026
-      YAML::PP::Schema::Include 0.026
-      YAML::PP::Schema::JSON 0.026
-      YAML::PP::Schema::Merge 0.026
-      YAML::PP::Schema::Perl 0.026
-      YAML::PP::Schema::Tie::IxHash 0.026
-      YAML::PP::Schema::YAML1_1 0.026
-      YAML::PP::Type::MergeKey 0.026
-      YAML::PP::Writer 0.026
-      YAML::PP::Writer::File 0.026
+      YAML::LibYAML v0.906.0
+      YAML::XS v0.906.0
     requirements:
-      B 0
       B::Deparse 0
-      Carp 0
-      Data::Dumper 0
-      Encode 0
       Exporter 0
       ExtUtils::MakeMaker 0
-      File::Basename 0
-      Getopt::Long 0
-      MIME::Base64 0
-      Module::Load 0
-      Scalar::Util 1.07
-      Tie::Array 0
-      Tie::Hash 0
+      Scalar::Util 0
       base 0
       constant 0
-      overload 0
-      perl 5.008000
+      perl 5.008001
       strict 0
       warnings 0
