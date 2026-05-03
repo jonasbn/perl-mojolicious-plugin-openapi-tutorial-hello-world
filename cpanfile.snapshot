@@ -1,32 +1,38 @@
 # carton snapshot format: version 1.0
 DISTRIBUTIONS
-  JSON-Validator-4.05
-    pathname: J/JH/JHTHORSEN/JSON-Validator-4.05.tar.gz
+  JSON-Validator-5.15
+    pathname: J/JH/JHTHORSEN/JSON-Validator-5.15.tar.gz
     provides:
-      JSON::Validator 4.05
+      JSON::Validator 5.15
       JSON::Validator::Error undef
+      JSON::Validator::Exception undef
       JSON::Validator::Formats undef
       JSON::Validator::Joi undef
-      JSON::Validator::Ref undef
       JSON::Validator::Schema undef
+      JSON::Validator::Schema::Draft201909 undef
       JSON::Validator::Schema::Draft4 undef
       JSON::Validator::Schema::Draft6 undef
       JSON::Validator::Schema::Draft7 undef
+      JSON::Validator::Schema::OpenAPIv2 undef
+      JSON::Validator::Schema::OpenAPIv3 undef
+      JSON::Validator::Store undef
+      JSON::Validator::URI undef
       JSON::Validator::Util undef
     requirements:
       ExtUtils::MakeMaker 0
       List::Util 1.45
       Mojolicious 7.28
       YAML::XS 0.67
-      perl 5.010001
-  Mojolicious-8.61
-    pathname: S/SR/SRI/Mojolicious-8.61.tar.gz
+      perl 5.016
+  Mojolicious-9.42
+    pathname: S/SR/SRI/Mojolicious-9.42.tar.gz
     provides:
       Mojo undef
       Mojo::Asset undef
       Mojo::Asset::File undef
       Mojo::Asset::Memory undef
       Mojo::Base undef
+      Mojo::BaseUtil undef
       Mojo::ByteStream undef
       Mojo::Cache undef
       Mojo::Collection undef
@@ -49,7 +55,6 @@ DISTRIBUTIONS
       Mojo::Home undef
       Mojo::IOLoop undef
       Mojo::IOLoop::Client undef
-      Mojo::IOLoop::Delay undef
       Mojo::IOLoop::Server undef
       Mojo::IOLoop::Stream undef
       Mojo::IOLoop::Subprocess undef
@@ -67,6 +72,7 @@ DISTRIBUTIONS
       Mojo::Reactor undef
       Mojo::Reactor::EV undef
       Mojo::Reactor::Poll undef
+      Mojo::SSE undef
       Mojo::Server undef
       Mojo::Server::CGI undef
       Mojo::Server::Daemon undef
@@ -89,11 +95,12 @@ DISTRIBUTIONS
       Mojo::UserAgent::Transactor undef
       Mojo::Util undef
       Mojo::WebSocket undef
-      Mojolicious 8.61
+      Mojolicious 9.42
       Mojolicious::Command undef
       Mojolicious::Command::Author::cpanify undef
       Mojolicious::Command::Author::generate undef
       Mojolicious::Command::Author::generate::app undef
+      Mojolicious::Command::Author::generate::dockerfile undef
       Mojolicious::Command::Author::generate::lite_app undef
       Mojolicious::Command::Author::generate::makefile undef
       Mojolicious::Command::Author::generate::plugin undef
@@ -111,6 +118,7 @@ DISTRIBUTIONS
       Mojolicious::Lite undef
       Mojolicious::Plugin undef
       Mojolicious::Plugin::Config undef
+      Mojolicious::Plugin::Config::Sandbox undef
       Mojolicious::Plugin::DefaultHelpers undef
       Mojolicious::Plugin::EPLRenderer undef
       Mojolicious::Plugin::EPRenderer undef
@@ -137,18 +145,19 @@ DISTRIBUTIONS
       IO::Socket::IP 0.37
       Sub::Util 1.41
       perl 5.016
-  Mojolicious-Plugin-OpenAPI-3.39
-    pathname: J/JH/JHTHORSEN/Mojolicious-Plugin-OpenAPI-3.39.tar.gz
+  Mojolicious-Plugin-OpenAPI-5.11
+    pathname: J/JH/JHTHORSEN/Mojolicious-Plugin-OpenAPI-5.11.tar.gz
     provides:
-      JSON::Validator::OpenAPI::Mojolicious undef
-      Mojolicious::Plugin::OpenAPI 3.39
+      Mojolicious::Plugin::OpenAPI 5.11
       Mojolicious::Plugin::OpenAPI::Cors undef
+      Mojolicious::Plugin::OpenAPI::Parameters undef
       Mojolicious::Plugin::OpenAPI::Security undef
       Mojolicious::Plugin::OpenAPI::SpecRenderer undef
     requirements:
       ExtUtils::MakeMaker 0
-      JSON::Validator 4.05
-      Mojolicious 8.00
+      JSON::Validator 5.13
+      Mojolicious 9.00
+      perl 5.016
   YAML-LibYAML-v0.906.0
     pathname: T/TI/TINITA/YAML-LibYAML-v0.906.0.tar.gz
     provides:
@@ -164,3 +173,9 @@ DISTRIBUTIONS
       perl 5.008001
       strict 0
       warnings 0
+  install-0.01
+    pathname: D/DA/DAGOLDEN/install-0.01.tar.gz
+    provides:
+      install 0.01
+    requirements:
+      ExtUtils::MakeMaker 0
