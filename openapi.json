@@ -2,6 +2,7 @@
     "swagger": "2.0",
     "info": { "version": "1.0", "title": "Hello World example" },
     "basePath": "/api",
+    "produces": ["application/json"],
     "paths": {
       "/hello_world": {
         "get": {

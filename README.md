@@ -57,6 +57,7 @@ Open `openapi.json` and insert the following _snippet_:
     "swagger": "2.0",
     "info": { "version": "1.0", "title": "Hello World example" },
     "basePath": "/api",
+    "produces": ["application/json"],
     "paths": {
       "/hello_world": {
         "get": {
@@ -98,6 +99,8 @@ Now lets go over our definiton.
 - `x-mojo-name`: this is the name used to identify our operation in the **Mojolicious** application
 
 - `x-mojo-to`: this is the specification for the route to be used for our operation in the **Mojolicious** application, more on this later
+
+- `produces`: declares the MIME types the API can return. Newer versions of `Mojolicious::Plugin::OpenAPI` validate the incoming `Accept` header against this list. Without it, a request with `Accept: */*` will be rejected with a 400 error.
 
 - `responses`: here we define the type we want to handle, for now we settle for `200`. The response definition outline our response, this could be boiled down to a `string` instead of an `object`, with properties, but the example would be come _too simple_ and in my opinion we work primarily with objects over basic types, so this extended example makes for a better reference.
 
