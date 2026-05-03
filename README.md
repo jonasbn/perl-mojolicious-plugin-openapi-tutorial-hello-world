@@ -42,13 +42,13 @@ $ cpanm Mojolicious::Plugin::OpenAPI
 
 If you need help installing please refer to [the CPAN installation guide](https://www.cpan.org/modules/INSTALL.html).
 
-Create a definition JSON file based on **OpenAPI** to support an Hello World implementation based on the **OpenAPI** specification:
+Create a definition JSON file based on **OpenAPI** to support a Hello World implementation based on the **OpenAPI** specification:
 
 ```bash
 $ touch openapi.json
 ```
 
-The exact name of this file is insignifcant, I just prefer to have clear and understandable filenames for easy identification.
+The exact name of this file is insignificant, I just prefer to have clear and understandable filenames for easy identification.
 
 Open `openapi.json` and insert the following _snippet_:
 
